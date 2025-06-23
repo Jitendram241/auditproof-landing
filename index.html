@@ -1,141 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AuditProof.AI – AI-Powered SAP Audit Assistant</title>
-    <meta name="description" content="AuditProof.AI helps SAP consultants automate user access audits with GenAI, risk scoring, and PDF reports.">
-    <style>
-        body {
-            font-family: "Segoe UI", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f7fa;
-            color: #333;
-        }
-        header {
-            background: #111827;
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-        .section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-        .section h2 {
-            font-size: 1.6rem;
-            color: #1f2937;
-        }
-        .section p, ul {
-            font-size: 1.05rem;
-            line-height: 1.6;
-        }
-        .cta {
-            text-align: center;
-            margin: 2rem;
-        }
-        .cta a {
-            background: #4CAF50;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border-radius: 6px;
-        }
-        .secondary-btn {
-            background: #2563eb;
-            margin-left: 1rem;
-        }
-        footer {
-            background: #e5e7eb;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuditProof.AI – AI-Powered SAP Audit Assistant</title>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <img src="assets/logo.png" alt="AuditProof.AI Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>AuditProof.AI</h1>
-    <p>GenAI-Powered SAP Audit Assistant for Consultants & Enterprises</p>
-</header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>AuditProof.AI</h1>
+        <p>AI-powered SAP Access Risk & SoD Audit Platform with Auto PDF Reports and Secure Log Tracking.</p>
+        <a href="features.html" class="btn-primary">Explore Features</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/banner.jpg" alt="Audit Dashboard Illustration" />
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-    <h2>🔥 Why AuditProof?</h2>
-    <p>Manual SAP user access reviews are time-consuming, error-prone, and expensive. AuditProof.AI automates the entire workflow — from log upload to tamper-proof PDF reports with AI-generated insights.</p>
-</div>
+  <section class="features-intro">
+    <div class="container">
+      <h2>Why AuditProof.AI?</h2>
+      <p>Designed for SAP Admins, GRC Auditors, and Enterprise Consultants who demand secure, fast, and tamper-proof access analysis powered by GenAI.</p>
+    </div>
+  </section>
 
-<div class="section">
-    <h2>🚀 How It Works</h2>
-    <ul>
-        <li>1. Upload SAP user access logs (CSV or XLSX)</li>
-        <li>2. AI engine classifies access risk (High / Critical / SoD violations)</li>
-        <li>3. Get a beautiful PDF report + email delivery in seconds</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>📋 Key Features</h2>
-    <ul>
-        <li>✅ GPT-powered SAP access risk analysis</li>
-        <li>✅ SoD violation detection with role-to-TCode mapping</li>
-        <li>✅ Tamper-proof SHA256 file hash</li>
-        <li>✅ PDF reports with logo, summary, and file details</li>
-        <li>✅ Auto-email delivery (SMTP integrated)</li>
-        <li>✅ Dashboard and file archive</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>💻 Tech Stack</h2>
-    <ul>
-        <li>🧠 OpenAI GPT-3.5 / GPT-4 API</li>
-        <li>📦 Streamlit (Python frontend)</li>
-        <li>📄 FPDF for PDF report generation</li>
-        <li>📧 SMTP Email for delivery</li>
-        <li>🧪 Razorpay (coming soon)</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>👤 Who Uses This</h2>
-    <p>AuditProof.AI is trusted by:</p>
-    <ul>
-        <li>SAP Security Consultants</li>
-        <li>Internal audit teams</li>
-        <li>Enterprise compliance & risk officers</li>
-    </ul>
-</div>
-
-<div class="cta">
-    <a href="https://jitendram241-auditproof-ai-app-c4pt13.streamlit.app/" target="_blank">🚀 Launch App</a>
-    <a class="secondary-btn" href="#" onclick="alert('Coming soon via Razorpay')">💳 Buy Pro Plan (₹199)</a>
-</div>
-
-<div class="section">
-    <h2>💬 Testimonials</h2>
-    <blockquote>
-        “AuditProof.AI cut our audit reporting time by 80%. It's a must-have for SAP teams.” – Beta User
-    </blockquote>
-</div>
-
-<footer>
-    📧 Contact: <a href="mailto:jeetendramahajan18@gmail.com">jeetendramahajan18@gmail.com</a> <br/>
-    © 2025 AuditProof.AI
-</footer>
-
+  <footer>
+    <div class="container footer">
+      <p>&copy; 2025 AuditProof.AI – All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
