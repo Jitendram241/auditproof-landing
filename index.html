@@ -3,106 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AuditProof.AI – SAP Risk & Audit Automation</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-    }
-    .hero {
-      background: url('assets/banner.png') no-repeat center center/cover;
-      height: 75vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 0 3rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      margin-top: 1rem;
-    }
-    .btn-primary {
-      background-color: #004080;
-      border: none;
-    }
-    .features-section {
-      padding: 4rem 2rem;
-      background-color: white;
-    }
-    .footer {
-      background-color: #f1f1f1;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    nav a {
-      font-weight: 500;
-    }
-  </style>
+  <title>AuditProof.AI</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
-    <a class="navbar-brand" href="#">
-      <img src="assets/logo.png" alt="AuditProof.AI Logo" class="logo">
-
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <header class="hero text-white">
-    <div>
-      <h1>AuditProof.AI</h1>
-      <p>AI-powered SAP Access Risk & SoD Audit Platform with Auto PDF Reports and Secure Log Tracking.</p>
-      <a href="https://jitendram241-auditproof-ai-app-c4pt13.streamlit.app" class="btn btn-primary btn-lg mt-3">Launch App</a>
+  <!-- Header with logo and navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <img src="assets/logo.png" alt="AuditProof.AI Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- WHY US -->
-  <section class="features-section text-center">
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
     <div class="container">
-      <h2 class="mb-4">Why Choose AuditProof.AI?</h2>
-      <p class="lead mb-5">Built for SAP Admins, GRC Teams, and Compliance Consultants.</p>
+      <div class="hero-content">
+        <h1>AuditProof.AI</h1>
+        <p>AI-powered SAP Access Risk & SoD Audit Platform with Auto PDF Reports and Secure Log Tracking.</p>
+        <a href="#features" class="cta-button">Explore Features</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/banner.png" alt="Audit Dashboard Illustration" />
+      </div>
+    </div>
+  </section>
 
-      <div class="row g-4">
-        <div class="col-md-4">
-          <h5>🔐 SoD & Access Risk Automation</h5>
-          <p>Instantly analyze critical TCodes and role combinations using AI + custom rulesets.</p>
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2>Why Choose AuditProof.AI?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>🔐 Access Risk Analysis</h3>
+          <p>Identify critical transaction codes and roles with high impact.</p>
         </div>
-        <div class="col-md-4">
-          <h5>📊 Tamper-Proof Audit Logs</h5>
-          <p>All uploads are hash-verified with downloadable PDF reports for compliance evidence.</p>
+        <div class="feature">
+          <h3>🧠 AI-Powered Summaries</h3>
+          <p>Leverage GPT-4 to generate executive reports and SoD findings.</p>
         </div>
-        <div class="col-md-4">
-          <h5>📧 One-Click Reporting</h5>
-          <p>Send audit reports to stakeholders directly from the app with email integration.</p>
+        <div class="feature">
+          <h3>📄 PDF Reporting</h3>
+          <p>Generate tamper-proof reports with embedded hash and audit trails.</p>
+        </div>
+        <div class="feature">
+          <h3>📬 Email Delivery</h3>
+          <p>Send reports to stakeholders instantly with built-in mailer.</p>
+        </div>
+        <div class="feature">
+          <h3>📊 Dashboard</h3>
+          <p>View trends, risk scores, activity logs in a clear visual dashboard.</p>
+        </div>
+        <div class="feature">
+          <h3>⚙️ Custom SoD Upload</h3>
+          <p>Upload your own SoD rulesets for enterprise-grade audits.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 AuditProof.AI — All rights reserved. | <a href="https://razorpay.me/@jitendramahajan">Support Us</a></p>
+    <div class="container">
+      <p>© 2025 AuditProof.AI – All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
